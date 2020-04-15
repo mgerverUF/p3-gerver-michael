@@ -1,8 +1,15 @@
 header, nav, aside, article, footer, section, main, figure, figcaption {
 	display:block;
 }
+
 * {
  	margin:0;
 	border:0;
 	padding:0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
