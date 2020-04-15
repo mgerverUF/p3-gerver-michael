@@ -12,8 +12,7 @@ contentBase: './dist' //where contents are served from
 plugins: [
 new HtmlWebpackPlugin({
 filename: 'index.html', // name of html file to be created
-template: './index.html' // source from which html file
-would be created
+template: './index.html' // source from which html file would be created
 })
 ]
 }
