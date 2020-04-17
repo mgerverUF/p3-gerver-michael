@@ -1,5 +1,6 @@
 import { headerText } from './modules/header';
 import {footerText} from './modules/footer';
+import './main.css';
 
 class App {
 
