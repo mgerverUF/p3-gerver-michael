@@ -1,4 +1,4 @@
-// Create a class called Header with two properties
+// Create a class called Footer with two properties
 class Footer {
     constructor(footerLabel, lastUpdate) {
         this.footerLabel = footerLabel;
@@ -6,5 +6,5 @@ class Footer {
     }
 }    
 
-// Create a variable that's a new instance of Header
+// Create a variable that's a new instance of Footer
 export const footerText = new Footer('Random Lunch Generator','Last updated with new options 04.14.2020');

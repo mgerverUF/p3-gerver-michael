@@ -59,25 +59,21 @@ class lunchGenerator {
         ]
 
         // Function to shuffle elements within the array
-        let shuffleNum = (i, j, k) => {
-            for (i = lunchArray.length - 1; i > 0; i--) {
-                j = Math.floor(Math.random() * i)
-                k = lunchArray[i]
-                lunchArray[i] = lunchArray[j]
-                lunchArray[j] = k                           
-            };
-            shuffleNum(lunchArray);
+        for (i = lunchArray.length - 1; i > 0; i--) {
+            j = Math.floor(Math.random() * i)
+            k = lunchArray[i]
+            lunchArray[i] = lunchArray[j]
+            lunchArray[j] = k                          
         }; 
-
-        
-            };
+    };
 
         showResult() {
-            let btn = document.getElementById('lunch-button');
+            const btn = document.getElementById('lunch-button');
             btn.addEventListener('click', () => {
+            this.randomizeLunches();    
             document.getElementById('result').innerHTML = lunchArray[0];
         }       
-            )}
+            )};
 }
 
-// export const lunchOption = new lunchGenerator(lunchArray[0]); 
+export const lunchOption = new lunchGenerator(showResult()); 
