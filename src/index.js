@@ -15,7 +15,7 @@ class App {
         <h1>${headerText.pageTitle}</h1>
         <p>${headerText.pageDescription}</p>
         <button id="lunch-button">Generate New Lunch</button>
-        <img id="result-pic" src="${lunchOption.lunchArray[0].lunchPic}" />
+        <img id="result-pic" src=${lunchOption.lunchArray[0].lunchPic} />
         <h3 id="result">${lunchOption.showResult()}</h3>
         <h4>${footerText.footerLabel}</h4>
         <h4>${footerText.lastUpdate}</h4>
