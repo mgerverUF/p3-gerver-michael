@@ -1,79 +1,78 @@
 class lunchGenerator {
-    constructor() {
-        this.randomizeLunches();
-        this.showResult();
-    }
-
-    randomizeLunches() {
-        // Lunch array
-        const lunchArray = [
+    constructor(lunchArray) {
+        this.lunchArray = lunchArray = [
             {
                 lunchName: 'Pizza',
-                lunchPic: '../images/pizza.jpg'
+                lunchPic: '/images/pizza.jpg'
             },
         
             {
                 lunchName: 'Noodle Bowl',
-                lunchPic: '../images/noodlebowl.jpg'
+                lunchPic: '/images/noodlebowl.jpg'
             },
         
             {
                 lunchName: 'Burrito',
-                lunchPic: '../images/burrito.jpg'
+                lunchPic: '/images/burrito.jpg'
             },
         
             {
                 lunchName: 'Chicken and Fries',
-                lunchPic: '../images/chicken.jpg'
+                lunchPic: '/images/chicken.jpg'
             },
         
             {
                 lunchName: 'Burger and Fries',
-                lunchPic: '../images/burger.jpg'
+                lunchPic: '/images/burger.jpg'
             },
         
             {
                 lunchName: 'Crab Cakes',
-                lunchPic: '../images/crabcakes.jpg'
+                lunchPic: '/images/crabcakes.jpg'
             },
         
             {
                 lunchName: 'Yogurt Parfait',
-                lunchPic: '../images/yogurt.jpg'
+                lunchPic: '/images/yogurt.jpg'
             },
         
             {
                 lunchName: 'Grilled Chicken',
-                lunchPic: '../images/grilledchicken.jpg'
+                lunchPic: 'images/grilledchicken.jpg'
             },
         
             {
                 lunchName: 'Boiled Egg',
-                lunchPic: '../images/egg.jpg'
+                lunchPic: '/images/egg.jpg'
             },
         
             {
                 lunchName: 'Banana Smoothie',
-                lunchPic: '../images/bananasmoothie.jpg'
+                lunchPic: '/images/bananasmoothie.jpg'
             }
         ]
+    }
 
+    randomizeLunches() {
         // Function to shuffle elements within the array
-        for (i = lunchArray.length - 1; i > 0; i--) {
-            j = Math.floor(Math.random() * i)
-            k = lunchArray[i]
-            lunchArray[i] = lunchArray[j]
-            lunchArray[j] = k                          
+        for (let i = this.lunchArray.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * i)
+            let k = this.lunchArray[i]
+            this.lunchArray[i] = this.lunchArray[j]
+            this.lunchArray[j] = k                          
         }; 
     };
 
         showResult() {
-            const btn = document.getElementById('lunch-button');
-            btn.addEventListener('click', () => {
-            this.randomizeLunches();    
-            document.getElementById('result').innerHTML = lunchArray[0];
-        }       
+            window.onload = () => {
+                const btn = document.getElementById('lunch-button');
+                btn.addEventListener('click', () => {
+                this.randomizeLunches();    
+                document.getElementById('result-pic').innerHTML = this.lunchArray[0].lunchPic;
+                document.getElementById('result').innerHTML = this.lunchArray[0].lunchName;
+                }       
             )};
+        }  
 }
 
-export const lunchOption = new lunchGenerator(showResult()); 
+export const lunchOption = new lunchGenerator(); 

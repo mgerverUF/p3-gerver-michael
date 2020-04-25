@@ -7,7 +7,7 @@ class App {
 
     constructor() {
         this.renderTemplate();
-        this.showResult();
+        lunchOption.showResult();
         }
 
     renderTemplate() {
@@ -15,7 +15,8 @@ class App {
         <h1>${headerText.pageTitle}</h1>
         <p>${headerText.pageDescription}</p>
         <button id="lunch-button">Generate New Lunch</button>
-        <h3 class="result">${lunchOption.showResult()}</h3>
+        <img id="result-pic" src="${lunchOption.lunchArray[0].lunchPic}" />
+        <h3 id="result">${lunchOption.showResult()}</h3>
         <h4>${footerText.footerLabel}</h4>
         <h4>${footerText.lastUpdate}</h4>
         `;
