@@ -16,8 +16,8 @@ class App {
         <h1>${headerText.pageTitle}</h1>
         <p>${headerText.pageDescription}</p>
         <button id="lunch-button">GENERATE</button>
-        <img id="result-pic" src=${lunchOption.lunchArray[0].lunchPic} />
-        <h3 id="result">${lunchOption.showResult()}</h3>
+        <img id="result-pic" class="on-arrival" src=${lunchOption.lunchArray[0].lunchPic} />
+        <h3 id="result" class="on-arrival">${lunchOption.showResult()}</h3>
         </section>
         <footer>
         <h4 class="footer-left">${footerText.footerLabel}</h4>

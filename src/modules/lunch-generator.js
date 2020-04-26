@@ -69,7 +69,9 @@ class lunchGenerator {
                 btn.addEventListener('click', () => {
                     this.randomizeLunches();    
                     document.getElementById('result-pic').setAttribute('src',this.lunchArray[0].lunchPic);
+                    document.getElementById('result-pic').classList.remove('on-arrival');
                     document.getElementById('result').innerHTML = this.lunchArray[0].lunchName;
+                    document.getElementById('result').classList.remove('on-arrival');
                 }       
             )};
         }  

@@ -7,4 +7,4 @@ class Footer {
 }    
 
 // Create a variable that's a new instance of Footer
-export const footerText = new Footer('Random Lunch Generator','Last updated 04.14.2020');
+export const footerText = new Footer('Random Lunch Generator','Last updated 04.26.2020');

@@ -11,13 +11,26 @@ module.exports = {
             ],
           },
           {
-            test: /\.(png|svg|jpg|gif)$/,
-            use: [
-            'file-loader',
-            ],
+          test: /\.(gif|png|jpe?g)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/images/'
+                }
+              }
+            ]
           },
-        ]
-      },
+
+          {
+            test:/\.html$/,
+            use: [
+              'html-loader'
+            ]
+          },
+         ] 
+       },
 
 entry: './src/index.js',
 output: {

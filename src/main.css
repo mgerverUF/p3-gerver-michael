@@ -30,7 +30,7 @@ h1 {
 
 h3 {
 	font-size: 2em;
-	padding: 5% 3% 0 3%;
+	padding: 0 3% 0 3%;
 }
 
 p {
@@ -47,7 +47,11 @@ button {
 	font-weight: bold;
 	font-size: 1em;
 	padding: 3% 10%;
-	margin-bottom: 50%;
+	margin-bottom: 10%;
+}
+
+img {
+	width: 70%;
 }
 
 /* https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
@@ -59,6 +63,16 @@ footer {
 	margin: auto;
 	background-color: #c5c2ff;
 	width: 85%;
+}
+
+.on-arrival {
+	display: none;
+}
+
+@media (min-width: 425px) {
+	img {
+		width: 50%;
+	}
 }
 
 @media (min-width: 500px) {
@@ -77,12 +91,21 @@ footer {
 
 	button {
 	font-size: 1.2em;
+	margin-bottom: 2%;
 	}
 }
 
 @media (min-width: 545px) {
+	p {
+		padding: 0 4% 6% 4%;
+	}
+
 	button {
-		margin-bottom: 30%;
+		margin-bottom: 0;
+	}
+
+	img {
+		width: 40%;
 	}
 }
 
@@ -93,8 +116,8 @@ footer {
 
 	button {
 		font-size: 1.5em;
-		margin-bottom: 20%;
 		padding: 2% 9%;
+		margin-bottom: 2%;
 	}
 
 	h1 {
@@ -107,7 +130,11 @@ footer {
 	
 	p {
 		font-size: 1.5em;
-		padding: 0 4% 10% 4%;
+		padding: 0 4% 5% 4%;
+	}
+
+	img {
+		width: 25%;
 	}
 
 	footer {
@@ -132,7 +159,11 @@ footer {
 
 @media (min-width: 1000px) {
 	button {
-		margin-bottom: 15%;
+		margin-bottom: 1%;
+	}
+
+	img {
+		width: 20%;
 	}
 
 	h4 {
@@ -150,7 +181,7 @@ footer {
 
 @media (min-width: 1200px) {
 	button {
-		margin-bottom: 10%;
+		margin-bottom: 1%;
 	}
 
 	h1 {
@@ -160,7 +191,6 @@ footer {
 	
 	h3 {
 		font-size: 2em;
-		padding: 5% 3% 0 3%;
 	}
 	
 	p {
