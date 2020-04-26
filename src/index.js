@@ -12,13 +12,17 @@ class App {
 
     renderTemplate() {
         const template = `
+        <section class="content">
         <h1>${headerText.pageTitle}</h1>
         <p>${headerText.pageDescription}</p>
-        <button id="lunch-button">Generate New Lunch</button>
+        <button id="lunch-button">GENERATE</button>
         <img id="result-pic" src=${lunchOption.lunchArray[0].lunchPic} />
         <h3 id="result">${lunchOption.showResult()}</h3>
-        <h4>${footerText.footerLabel}</h4>
-        <h4>${footerText.lastUpdate}</h4>
+        </section>
+        <footer>
+        <h4 class="footer-left">${footerText.footerLabel}</h4>
+        <h4 class="footer-right">${footerText.lastUpdate}</h4>
+        </footer>
         `;
 
         document.body.innerHTML = template;

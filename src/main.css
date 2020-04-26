@@ -11,5 +11,171 @@ header, nav, aside, article, footer, section, main, figure, figcaption {
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
-    text-align: center;
+	text-align: center;
+	background-color:#ae2cf1;
+	background-image: linear-gradient(#ae2cf1, #8662fb);
+}
+
+section {
+	background-color: white;
+	width: 85%;
+	margin: auto;
+	height: 100%;
+}
+
+h1 {
+	padding: 15% 3% 8% 3%;
+	font-size: 1.7em;
+}
+
+h3 {
+	font-size: 2em;
+	padding: 5% 3% 0 3%;
+}
+
+p {
+	padding: 0 4% 10% 4%;
+}
+
+button {
+	display: block;
+	margin: auto;
+	background-color: #278df1;
+	color: white;
+	border-radius: 40px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	padding: 3% 10%;
+	margin-bottom: 50%;
+}
+
+/* https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+footer {
+	display: block;
+	position: sticky;
+	padding: 2% 0;
+	bottom: 0;
+	margin: auto;
+	background-color: #c5c2ff;
+	width: 85%;
+}
+
+@media (min-width: 500px) {
+	h1 {
+		padding: 10% 3% 8% 3%;
+		font-size: 2.3em;
+	}
+	
+	h3 {
+		font-size: 2em;
+	}
+	
+	p {
+		font-size: 1.3em;
+	}
+
+	button {
+	font-size: 1.2em;
+	}
+}
+
+@media (min-width: 545px) {
+	button {
+		margin-bottom: 30%;
+	}
+}
+
+@media (min-width: 720px) {
+	section {
+		width: 70%;
+	}
+
+	button {
+		font-size: 1.5em;
+		margin-bottom: 20%;
+		padding: 2% 9%;
+	}
+
+	h1 {
+		font-size: 2.6em;
+	}
+	
+	h3 {
+		font-size: 2.4em;
+	}
+	
+	p {
+		font-size: 1.5em;
+		padding: 0 4% 10% 4%;
+	}
+
+	footer {
+		width: 70%;
+	}
+
+	h4 {
+		display: inline;
+	}
+
+	.footer-left {
+		text-align: left;
+		padding: 0 4% 0 4%;
+	}
+
+	.footer-right {
+		text-align: right;
+		padding: 0 4% 0 4%;
+	}
+
+}
+
+@media (min-width: 1000px) {
+	button {
+		margin-bottom: 15%;
+	}
+
+	h4 {
+		font-size: 1.1em;
+	}
+
+	.footer-left {
+		padding: 0 15% 0 4%;
+	}
+
+	.footer-right {
+		padding: 0 4% 0 15%;
+	}
+}
+
+@media (min-width: 1200px) {
+	button {
+		margin-bottom: 10%;
+	}
+
+	h1 {
+		padding: 8% 3% 5% 3%;
+		font-size: 2.8em;
+	}
+	
+	h3 {
+		font-size: 2em;
+		padding: 5% 3% 0 3%;
+	}
+	
+	p {
+		padding: 0 7% 6% 7%;
+	}
+
+	footer {
+		padding: 1% 0;
+	}
+
+	.footer-left {
+		padding: 0 20% 0 4%;
+	}
+
+	.footer-right {
+		padding: 0 4% 0 20%;
+	}
 }
